@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Dashboard | A/R Job Board</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="shortcut icon" href="About.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container d-flex d-sm-flex d-md-flex d-lg-flex bg-secondary-subtle">
+        <nav>
+            <div class="navbar d-flex d-sm-flex d-md-flex">
+                <div class="logo">
+                    <h1 class="fs-3"><span style="color: rgb(224, 175, 11);">A</span>/<span style="color: blue;">R</span> Job Board</h1> 
+                </div>
+                <ul class="list-unstyled" style="margin-top: 30%;">
+                    <li><a href="Dashboard.html"><i class="fas fa-user"></i><span class="nav-item"> Dashboard</span></a></li>
+                
+                    <li><a href=""><i class="fas fa-chart-bar"></i><span class="nav-item"> Analytics</span></a></li>
+                
+                    <li><a href=""><i class="fas fa-tasks"></i><span class="nav-item"> Job Board</span></a></li>
+                
+                    <li><a href=""><i class="fab fa-dochub"></i><span class="nav-item"> Documents</span></a></li>
+                
+                    <li><a href=""><i class="fas fa-cog"></i><span class="nav-item"> Setting</span></a></li>
+
+                    <li><a href=""><i class="fas fa-question-circle"></i><span class="nav-item"> Help</span></a></li>
+
+                    <li class="logout"><a href="Login.html"><i class="fas fa-sign-out-alt"></i><span class="nav-item"> Logout</span></a></li>
+                </ul>
+            </div>
+        </nav>
+
+       <!--Profile Information-->
+       <section class="container bg-light">
+        <div class="col-md col-lg p-5">
+          <h4 class="mb-3"><b>Profile/Information</b></h4>
+          <form class="needs-validation" novalidate></form>
+          <div class="row">
+            <div class="col-sm-4 mb-2">
+              <label for="firstName" class="form-label"><b>First name</b></label>
+              <input type="text" class="form-control" id="dashfirstName" placeholder="" value="" required>
+              <div class="invalid-feedback">
+                Valid first name is required.
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <label for="firstName" class="form-label"><b>Middle name</b></label>
+              <input type="text" class="form-control" id="dashmiddleName" placeholder="" value="" required>
+              <div class="invalid-feedback">
+                Valid middle name is required.
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <label for="lastName" class="form-label"><b>Last name</b></label>
+              <input type="text" class="form-control" id="dashlastName" placeholder="" value="" required>
+              <div class="invalid-feedback">
+                Valid last name is required.
+              </div>
+            </div>
+    
+            <div class="col-12 mb-2">
+              <label for="username" class="form-label"><b>Username</b></label>
+              <div class="input-group has-validation">
+                <span class="input-group-text"><i class="bi bi-person-vcard-fill"></i></span>
+                <input type="text" class="form-control" id="dashusername" placeholder="Username" required>
+                <div class="invalid-feedback">
+                  Your username is required.
+                </div>
+              </div>
+            </div>
+    
+            <div class="col-12 mb-2">
+              <label for="email" class="form-label"><b>Email</b></label>
+              <input type="email" class="form-control" id="dashemail" placeholder="you@gmail.com">
+              <div class="invalid-feedback">
+                Please enter a valid email address.
+              </div>
+            </div>
+            <div class="col-12 mb-2">
+              <label for="address" class="form-label"><b>Address</b></label>
+              <input type="text" class="form-control" id="dashaddress" placeholder="143 Iloveyou St." required>
+              <div class="invalid-feedback">
+                Please enter your <address></address>.
+              </div>
+            </div>
+    
+    
+            <div class="col-md-5">
+              <label for="country" class="form-label"><b>Country</b></label>
+              <select class="form-select" id="dashcountry" required>
+                <option value="">Choose...</option>
+                <option>Sa Buhay Mo</option>
+                <option>Wala Buhay Mo Parin</option>
+              </select>
+              <div class="invalid-feedback">
+                Please select a valid country.
+              </div>
+            </div>
+    
+            <div class="col-md-4">
+              <label for="state" class="form-label"><b>State</b></label>
+              <select class="form-select" id="dashstate" required>
+                <option value="">Choose...</option>
+                <option>Single</option>
+                <option>Double</option>
+                <option>Complicated</option>
+              </select>
+              <div class="invalid-feedback">
+                Please provide a valid state.
+              </div>
+            </div>
+    
+            <div class="col-md-3">
+              <label for="zip" class="form-label"><b>Zip</b></label>
+              <input type="text" class="form-control" id="dashzip" placeholder="" required>
+              <div class="invalid-feedback">
+                Zip code required.
+              </div>
+            </div>
+          </div>
+    
+          <hr class="my-4">
+    
+          <div class="row">
+          <div class="col-sm-4 mb-2 my-3">
+            <h4 class="mb-3">Gender</h4>
+            <div class="form-check">
+              <input id="male" name="gender" type="radio" class="form-check-input" checked required>
+              <label class="form-check-label" for="credit">Male</label>
+            </div>
+            <div class="form-check">
+              <input id="female" name="gender" type="radio" class="form-check-input" required>
+              <label class="form-check-label" for="debit">Female</label>
+            </div>
+            <div class="form-check">
+              <input id="other" name="gender" type="radio" class="form-check-input" required>
+              <label class="form-check-label" for="paypal">Others</label>
+            </div>
+          </div>
+    
+          <div class="col-sm-4 mb-2 my-3">
+            <h4 class="mb-3">Status</h4>
+            <div class="form-check">
+              <input id="male" name="Status" type="radio" class="form-check-input" checked required>
+              <label class="form-check-label" for="credit">Single</label>
+            </div>
+            <div class="form-check">
+              <input id="female" name="Status" type="radio" class="form-check-input" required>
+              <label class="form-check-label" for="debit">Married</label>
+            </div>
+            <div class="form-check">
+              <input id="other" name="Status" type="radio" class="form-check-input" required>
+              <label class="form-check-label" for="paypal">Daybors</label>
+            </div>
+          </div>
+          <div class="col-sm-4 mb-2 my-3">
+            <label for="myTextArea"><h5>Tell us about yourself:</h5></label>
+            <textarea id="myTextArea" name="textarea" rows="4" class="form-control"></textarea>
+          </div>
+          </div>
+          <hr class="my-4">
+      
+    </form>
+        </div>
+        
+      </section>
+      
+      
+        
+    </div>
+    <script src="login2.js">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</body>
+</html>

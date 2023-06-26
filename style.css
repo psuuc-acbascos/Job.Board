@@ -1,0 +1,244 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --bg-color: #1f242d;
+    --second-bg-color: #323946;
+    --text-color: #fff;
+    --main-color: #0ef;
+}
+/*Navigation section*/
+.navbar{
+    background-color: var(--second-bg-color);
+}
+#logo{
+    color: var(--text-color);
+    font-size: 2em;
+    
+}
+.blue{
+    color: #0074f8;
+}
+.nav-item .nav-link{
+    color: var(--text-color);
+    margin-left: 25px;
+}
+.nav-link:hover{
+ font-size: 17px;
+ font-weight: bold;
+ color: var(--main-color);
+ transition: 0.3s;
+}
+.btn0{
+    height: 45px;
+    width: 100px;
+    outline: none;
+    border-radius: 10px;
+    background-color: var(--main-color);
+    color: var(--bg-color);
+    transition: 0.7s;
+}
+.btn0:hover{
+    height: 45px;
+    width: 100px;
+    background-color: var(--second-bg-color);
+    color: var(--main-color);
+    outline: none;
+    font-weight: 500;
+}
+.btn1{
+    height: 45px;
+    width: 100px;
+    background-color: transparent;
+    color: var(--text-color);
+    outline: none;
+    border-radius: 10px;
+    border: 2px solid var(--main-color);
+    transition: 0.7s;
+}
+.btn1:hover{
+    height: 45px;
+    width: 100px;
+    outline: none;
+    border: 2px solid var(--text-color);
+    background-color: var(--second-bg-color);
+    color: var(--main-color);
+    font-size: 17px;
+}
+
+/*Main body*/
+.main{
+    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0)), url(body.jpeg)no-repeat ;
+    background-size: cover;
+    min-height: 95vh;
+    width: 100%;
+}
+.main h1{
+    font-size: 5rem;
+    font-weight: 800;
+    color: rgb(255, 255, 255);
+}
+.main input{
+    height: 71px;
+    width: 70%;
+    border: none;
+    border-radius: 40px;
+    outline: none;
+    padding: 15px;
+}
+.btn2{
+    height: 71px;
+    width: 25%;
+    background-color: rgb(73, 147, 243);
+    color: var(--text-color);
+    border: none;
+    border-end-end-radius: 40px;
+    border-top-left-radius: 40px;
+    outline: none;
+    cursor: pointer;
+    transform: all 0.4s;
+    margin-left: -15%;
+    font-weight: bold;
+}
+.btn2:hover{
+    background-color: var(--bg-color); 
+    color: var(--main-color);
+}
+/*Ceta section*/
+.ceta{
+    background-color: var(--second-bg-color);
+}
+.text{
+    color: var(--text-color);
+}
+.ceta h1{
+    font-size: 3.5rem;
+    color: var(--text-color);
+}
+.card{
+   width: 100%;
+   height: 100%;
+}
+.ceta .card:hover{
+    color: var(--main-color);
+    background-color: var(--bg-color);
+    width: 103%;
+    height: 103%;
+    transition: all 0.3s;
+    box-shadow: -2px 2px 22px -11px var(--main-color);
+    -webkit-box-shadow: -2px 2px 22px -11px var(--main-color);
+    -moz-shadow: -2px 2px 22px -11px var(--main-color);
+}
+.btn3{
+    height: 70px;
+    width: 70%;
+    background-color: rgb(73, 147, 243);
+    color: var(--text-color);
+    border: none;
+    border-end-end-radius: 40px;
+    border-top-left-radius: 40px;
+    outline: none;
+    cursor: pointer;
+    transform: all 0.4s;
+    margin-left: -15%;
+    font-weight: bold;
+}
+.btn3:hover{
+    background-color: var(--bg-color); 
+    color: var(--main-color);
+}
+/*  RESUME*/
+.resume{
+    background:linear-gradient(rgba(42, 123, 245, 0.719), rgba(4, 26, 100, 0.3)),url(Back.jpg)no-repeat;
+    background-size: cover;
+}
+.resume h1{
+    font-size: 3.8rem;
+}
+.resume .btn3{
+    margin-top: 10%;
+}
+.job p{
+    color: var(--text-color);
+}
+.job .btn3{
+    margin-left: 6%;
+}
+/*How It works*/
+.apply{
+    background: url(Cool.jpg);
+}
+/*Testimonial/Contact*/
+.slider{
+    background-color: var(--second-bg-color);
+}
+.slider h4{
+    color: var(--text-color);
+}
+.slider p{
+    color: var(--text-color);
+}
+.avatar{
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    border: solid #0074f8;
+}
+.perac{
+    font-size: 1.1rem;
+}
+.btn5{
+    height: 60px;
+    width: 30%;
+    outline: invert;
+    border: solid;
+    background: #0074f8;
+    cursor: pointer;
+    color: yellow;
+    border-radius: 10px;
+    transition: all 0.4s;
+}
+.btn5:hover{
+    height: 60px;
+    width: 30%;
+    outline: invert;
+    border: solid;
+    background: yellow;
+    cursor: pointer;
+    color: #0074f8;
+    font-weight: bolder;
+}
+.footer{
+    background: #121626;
+    color: white;
+}
+.footer input{
+    height: 45px;
+    width: 70%;
+    padding: 10px 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+.link:hover{
+    color: var(--main-color);
+    font-weight: bolder;
+    padding-left: 10px;
+    transition: all 0.4s;
+    cursor: pointer;
+}
+.footer button{
+    height: 45px;
+    width: 20%;
+    border: none;
+    outline: none;
+    margin-left: -12px;
+    border-top: 1px solid  yellow;
+    background: #0074f8;
+    color: white;
+    margin-top: 40px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
